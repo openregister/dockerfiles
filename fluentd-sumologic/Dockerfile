@@ -8,6 +8,7 @@ USER root
 RUN apk --no-cache add sudo build-base ruby-dev && \
 
     sudo -u fluent gem install fluent-plugin-sumologic_output && \
+    sudo -u fluent gem install fluent-plugin-rewrite-tag-filter && \
 
     rm -rf /home/fluent/.gem/ruby/2.3.0/cache/*.gem && sudo -u fluent gem sources -c && \
     apk del sudo build-base ruby-dev
