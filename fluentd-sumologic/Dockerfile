@@ -1,4 +1,4 @@
-FROM fluent/fluentd:latest
+FROM fluent/fluentd:v0.12.34
 MAINTAINER sam.crang@gmail.com
 
 WORKDIR /home/fluent
